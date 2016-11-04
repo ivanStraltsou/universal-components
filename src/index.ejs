@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<title>Angular 2 Universal Starter</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="IS">
+	<meta name="viewport" content="width=device-width,minimum-scale=1">
+	
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	
+	<base href="/">
+
+</head>
+<body>
+
+<noscript id="appContent">
+	<h1>Hello, World!</h1>
+	<h2>{{ value }}</h2>
+	<%- content %>
+</noscript>
+<script>
+	var mainTemplate = document.getElementById('appContent');
+	window.mainTemplate = mainTemplate.innerText;
+</script>
+<%- content %>
+
+<sc-app>
+	Loading Universal ...
+</sc-app>
+
+<script src="/index.js"></script>
+</body>
+</html>
